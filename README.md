@@ -1,2 +1,2 @@
 # jombelajarjava.github.io
-Jom Belajar Java website
+Website Jom Belajar Java
