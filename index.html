@@ -11,131 +11,127 @@
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-     
+
      ga('create', 'UA-64328787-1', 'auto');
      ga('send', 'pageview');
 
     </script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+     main {
+         margin: 40px auto;
+         max-width: 650px;
+         line-height: 1.6;
+         font-size: 18px;
+         color: #444;
+         padding: 0 10px;
+     }
+     h1, h2, h3 {
+         line-height: 1.2;
+     }
+     article {
+         border: 1px solid #c4c4c4;
+         border-radius: 12px;
+         padding: 12px;
+         margin-bottom: 20px;
+     }
+     img {
+         float: left;
+         width: 50%;
+     }
+     .cta:link, .cta:visited {
+         background-color: #c94dff;
+         color: white;
+         padding: 14px 25px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+     }
+     .cta:hover, a:active {
+         background-color: #ba19ff;
+     }
+     .cta-container {
+         text-align: center;
+     }
+    </style>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Jom Belajar Java <sup>beta</sup></a>
+    <!-- https://groups.google.com/forum/#!forum/jombelajarjava
+         https://github.com/JomBelajarJava
+         /java - img/java.png - Programming language utama di Java Virtual Machine (JVM).
+         /java8 - img/java8.png - Ringkaskan code anda dengan syntax baru dalam Java 8.
+         /clojure - img/clojure.png - Lisp di JVM yang fokus kepada functional programming.
+         /git - img/git.png - Lihat sejarah perubahan pada code anda sepanjang development. -->
+
+    <main>
+      <header>
+        <h1>Jom Belajar Java</h1>
+        <p>Laman web tutorial Java dan aplikasi dalam Bahasa Melayu</p>
+      </header>
+
+      <article>
+        <img src="img/java.png" alt="Logo Java">
+        <p>
+          Tutorial ini adalah untuk sesiapa yang ingin belajar programming
+          language Java. Tutorial bermula dengan topik yang paling asas.
+          Tutorial ini sesuai untuk pelajar-pelajar dan programmer yang ingin
+          melihat syntax Java.
+        </p>
+        <p>
+          Tujuan tutorial ini lebih fokus kepada struktur code dalam aplikasi.
+          Kita akan melihat topik-topik berkenaan dalam bab Database dan Code
+          Quality.
+        </p>
+        <p>
+          Tutorial Java adalah percuma dan boleh dibaca secara online. Jadi,
+          anda boleh baca pada bila-bila masa. Tunggu apa lagi, Jom Belajar
+          Java!
+        </p>
+        <div class="cta-container">
+          <a class="cta" href="/java">Belajar Java Online</a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="https://groups.google.com/forum/#!forum/jombelajarjava">Forum</a>
-            </li>
-            <li>
-              <a href="https://github.com/JomBelajarJava">GitHub</a>
-            </li>
-          </ul>
+      </article>
+
+      <article>
+        <img src="img/git.png" alt="Logo Git">
+        <p>
+          Tutorial Git ini terbuka kepada semua programmer tidak kira
+          programming language mana yang digunakan. Tutorial ini sesuai untuk
+          programmer yang ingin menjejaki setiap perubahan yang mereka lakukan
+          semasa development.
+        </p>
+        <p>
+          Semasa mengikuti tutorial ini, kita akan melihat asas penggunaan Git
+          untuk programmer dan sekumpulan programmer. Kita juga akan melihat
+          gambaran kehidupan seharian programmer di tempat kerja.
+        </p>
+        <p>
+          Tutorial Git adalah percuma dan boleh dibaca secara online. Jadi, anda
+          boleh baca pada bila-bila masa. Tanpa membuang masa, Jom Belajar Git!
+        </p>
+        <div class="cta-container">
+          <a class="cta" href="/git">Belajar Git Online</a>
         </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-    </nav>
+      </article>
 
-    <div class="container">
-
-      <div class="alert alert-info">
-        <strong>Info Terkini!</strong> Tutorial Java baru yang sudah siap: <a href="/java/design-pattern" class="alert-link">Code Quality - Design Pattern</a> <i>(14 Jan 2018)</i>
-      </div>
-
-      <div class="row">
-
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <img src="img/java.png" alt="">
-            <div class="caption">
-              <h3 class="text-center">Tutorial Java</h3>
-              <p>Programming language utama di Java Virtual Machine (JVM).</p>
-              <p>
-                <ul>
-                  <li><a href="/java#_asas">Asas</a></li>
-                  <li><a href="/java#_object_oriented_programming">Object-oriented Programming</a></li>
-                  <li><a href="/java#_class_yang_penting">Class Yang Penting</a></li>
-                  <li><a href="/java#_data_structure">Data Structure</a></li>
-                  <li><a href="/java#_database">Database</a></li>
-                  <li><a href="/java#_code_quality">Code Quality</a></li>
-                  <li><a href="/java#_javafx">JavaFX</a></li>
-                </ul>
-              </p>
-              <p class="text-center">
-                <a href="/java" class="btn btn-primary btn-block">Jom Belajar!</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <img src="img/java8.png" alt="">
-            <div class="caption">
-              <h3 class="text-center">Tutorial Java 8</h3>
-              <p>Ringkaskan code anda dengan syntax baru dalam Java 8.</p>
-              <p>
-                <a href="#" class="btn btn-primary btn-block disabled">Jom Belajar!</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <img src="img/clojure.png" alt="">
-            <div class="caption">
-              <h3 class="text-center">Tutorial Clojure</h3>
-              <p>Lisp di JVM yang fokus kepada functional programming.</p>
-              <p>
-                <a href="#" class="btn btn-primary btn-block disabled">Jom Belajar!</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <img src="img/git.png" alt="">
-            <div class="caption">
-              <h3 class="text-center">Tutorial Git</h3>
-              <p>Lihat sejarah perubahan pada code anda sepanjang development.</p>
-              <p>
-                <a href="#" class="btn btn-primary btn-block disabled">Jom Belajar!</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- /.row -->
-
-      <hr>
+      <article>
+        <p>
+          Pembangunan website ini akan sentiasa berterusan. Jadi, anda mungkin
+          akan melihat perubahan berlaku dari semasa ke semasa. Anda boleh
+          melihat pembangunan website Jom Belajar Java di <a
+          href="https://github.com/JomBelajarJava">GitHub</a>.
+        </p>
+        <p>
+          Jika ada apa-apa kesilapan, penambahbaikan, atau ketidakfahaman yang
+          ingin anda ketengahkan, anda boleh kemukakan di <a
+          href="https://groups.google.com/forum/#!forum/jombelajarjava">Google
+          Group</a>.
+        </p>
+      </article>
 
       <footer>
-        <div class="row">
-          <div class="col-lg-12">
-            <p>Copyright &copy; Jom Belajar Java 2012-2018</p>
-          </div>
-        </div>
+        Copyright &copy; Jom Belajar Java 2012-2018
       </footer>
-
-    </div>
-    <!-- /.container -->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </main>
   </body>
 </html>
