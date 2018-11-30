@@ -18,6 +18,9 @@
     </script>
 
     <style>
+     body {
+         visibility: hidden;
+     }
      main {
          margin: 40px auto;
          max-width: 650px;
@@ -133,5 +136,9 @@
         Copyright &copy; Jom Belajar Java 2012-2018
       </footer>
     </main>
+
+    <script>
+     window.onload = function() { document.body.style.visibility = "visible"; }
+    </script>
   </body>
 </html>
