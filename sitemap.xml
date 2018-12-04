@@ -4,8 +4,12 @@
     <loc>https://www.jombelajarjava.com/java/sitemap.xml</loc>
     <lastmod>2018-11-30</lastmod>
   </sitemap>
-    <sitemap>
+  <sitemap>
     <loc>https://www.jombelajarjava.com/git/sitemap.xml</loc>
     <lastmod>2018-11-30</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.jombelajarjava.com/webdevelopment/sitemap.xml</loc>
+    <lastmod>2018-12-05</lastmod>
   </sitemap>
 </sitemapindex>
