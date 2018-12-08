@@ -15,6 +15,9 @@
      ga('send', 'pageview');
     </script>
     <style>
+     body {
+         visibility: hidden;
+     }
      main {
          margin: 40px auto;
          max-width: 650px;
@@ -161,6 +164,7 @@
 
     <script>
      window.onload = function() {
+         document.body.style.visibility = 'visible';
          document.getElementById('javaimg').src = 'img/study.png';
          document.getElementById('gitimg').src = 'img/meeting.png';
          document.getElementById('webdevimg').src = 'img/spiderweb.png';
