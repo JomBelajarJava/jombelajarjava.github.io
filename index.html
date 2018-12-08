@@ -15,9 +15,6 @@
      ga('send', 'pageview');
     </script>
     <style>
-     body {
-         visibility: hidden;
-     }
      main {
          margin: 40px auto;
          max-width: 650px;
@@ -71,7 +68,8 @@
       </header>
 
       <article>
-        <img src="img/study.png" alt="Gambar untuk Tutorial Java">
+        <img id="javaimg" src="img/placeholder.png"
+             alt="Gambar untuk Tutorial Java">
         <p>
           Tutorial ini adalah untuk sesiapa yang ingin belajar programming
           language Java. Tutorial bermula dengan topik yang paling asas.
@@ -94,7 +92,8 @@
       </article>
 
       <article>
-        <img src="img/meeting.png" alt="Gambar untuk Tutorial Git">
+        <img id="gitimg" src="img/placeholder.png"
+             alt="Gambar untuk Tutorial Git">
         <p>
           Tutorial Git ini terbuka kepada semua programmer tidak kira
           programming language mana yang digunakan. Tutorial ini sesuai untuk
@@ -116,7 +115,8 @@
       </article>
 
       <article>
-        <img src="img/spiderweb.png" alt="Gambar untuk Tutorial Web Development">
+        <img id="webdevimg" src="img/placeholder.png"
+             alt="Gambar untuk Tutorial Web Development">
         <p>
           Zaman sekarang boleh dikatakan semua aplikasi memerlukan akses ke
           internet, termasuklah mobile(Android), desktop, dan embedded(internet
@@ -160,7 +160,11 @@
     </main>
 
     <script>
-     window.onload = function() { document.body.style.visibility = "visible"; }
+     window.onload = function() {
+         document.getElementById('javaimg').src = 'img/study.png';
+         document.getElementById('gitimg').src = 'img/meeting.png';
+         document.getElementById('webdevimg').src = 'img/spiderweb.png';
+     }
     </script>
   </body>
 </html>
