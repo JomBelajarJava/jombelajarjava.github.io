@@ -17,9 +17,35 @@
     <style>
      body {
          visibility: hidden;
+         margin: 0;
+     }
+     nav {
+         background-color: #C8A678;
+     }
+     nav ul {
+         max-width: 650px;
+         display: block;
+         list-style-type: none;
+         margin: 0 auto;
+         padding: 0;
+         overflow: hidden;
+     }
+     nav li {
+         float: right;
+     }
+     nav a {
+         display: block;
+         color: white;
+         font-size: 14px;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+     }
+     nav a:hover {
+         background-color: #A38762;
      }
      main {
-         margin: 40px auto;
+         margin: 0 auto 40px auto;
          max-width: 650px;
          line-height: 1.6;
          font-size: 18px;
@@ -63,6 +89,21 @@
          /java8 - img/java8.png - Ringkaskan code anda dengan syntax baru dalam Java 8.
          /clojure - img/clojure.png - Lisp di JVM yang fokus kepada functional programming.
          /git - img/git.png - Lihat sejarah perubahan pada code anda sepanjang development. -->
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://groups.google.com/forum/#!forum/jombelajarjava">
+            Google Groups
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/JomBelajarJava">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <main>
       <header>
@@ -153,7 +194,7 @@
           Jika ada mana-mana kesilapan, penambahbaikan, atau ketidakfahaman yang
           ingin anda ketengahkan, anda boleh kemukakan di <a
           href="https://groups.google.com/forum/#!forum/jombelajarjava">Google
-          Group</a>.
+          Groups</a>.
         </p>
       </article>
 
