@@ -82,7 +82,7 @@
      .cta-container {
          text-align: center;
      }
-     .footer-link {
+     .footer-link:link, .footer-link:visited {
          color: #444;
          text-decoration: none;
          font-size: 80%;
@@ -145,90 +145,47 @@
         <p>Laman web tutorial Java dan aplikasi dalam Bahasa Malaysia</p>
       </header>
 
+      <h2>Privacy Policy</h2>
+
       <article>
-        <img id="javaimg" src="img/placeholder.png"
-             alt="Gambar untuk Tutorial Java">
+        <h3>Cookie</h3>
         <p>
-          Tutorial ini adalah untuk sesiapa yang ingin belajar programming
-          language Java. Tutorial bermula dengan topik yang paling asas.
-          Tutorial ini sesuai untuk pelajar-pelajar dan programmer yang ingin
-          melihat syntax Java.
+          Cookie ialah sebuat fail yang disimpan dan dihantar ke komputer untuk
+          mengenalpasti browser atau meletakkan apa-apa maklumat. Cookie
+          sememangnya digunakan untuk membolehkan sesebuah website berfungsi,
+          atau berfungsi dengan lebih baik.
         </p>
-        <p>
-          Tujuan tutorial ini lebih fokus kepada struktur code dalam aplikasi.
-          Kita akan melihat topik-topik berkenaan dalam bab Database dan Code
-          Quality.
-        </p>
-        <p>
-          Tutorial Java adalah percuma dan boleh dibaca secara online. Jadi,
-          anda boleh baca pada bila-bila masa. Tunggu apa lagi, Jom Belajar
-          Java!
-        </p>
-        <div class="cta-container">
-          <a class="cta" href="/java">Belajar Java Online</a>
-        </div>
       </article>
 
       <article>
-        <img id="gitimg" src="img/placeholder.png"
-             alt="Gambar untuk Tutorial Git">
+        <h3>Analytics</h3>
         <p>
-          Tutorial Git ini terbuka kepada semua programmer tidak kira
-          programming language mana yang digunakan. Tutorial ini sesuai untuk
-          programmer yang ingin menjejaki setiap perubahan yang mereka lakukan
-          semasa development.
+          Website ini menggunakan Google Analytics untuk menjejaki pelawat. Data
+          analytics tersebut akan digunakan untuk melihat page mana yang selalu
+          dikunjungi supaya penambahbaikan boleh dilakukan.
         </p>
         <p>
-          Semasa mengikuti tutorial ini, kita akan melihat asas penggunaan Git
-          untuk programmer dan sekumpulan programmer. Kita juga akan melihat
-          gambaran kehidupan seharian programmer di tempat kerja.
+          Anda boleh memilih untuk tidak membenarkan Google Analytics untuk
+          menjejaki anda (<i>opt out</i>) dengan menggunakan addon browser <a
+          href="https://tools.google.com/dlpage/gaoptout">di sini</a>.
         </p>
-        <p>
-          Tutorial Git adalah percuma dan boleh dibaca secara online. Jadi, anda
-          boleh baca pada bila-bila masa. Tanpa membuang masa, Jom Belajar Git!
-        </p>
-        <div class="cta-container">
-          <a class="cta" href="/git">Belajar Git Online</a>
-        </div>
       </article>
 
       <article>
-        <img id="webdevimg" src="img/placeholder.png"
-             alt="Gambar untuk Tutorial Web Development">
+        <h3>Advertisement</h3>
         <p>
-          Zaman sekarang boleh dikatakan semua aplikasi memerlukan akses ke
-          internet, termasuklah mobile(Android), desktop, dan embedded(internet
-          of things). Seperti programming language yang lain, kita boleh
-          menggunakan Java untuk membina aplikasi web.
+          Website ini mengandungi iklan yang disediakan oleh Google Adsense.
+          Google Adsense menggunakan cookie untuk memaparkan iklan mengikut
+          sejarah penggunaan internet pelawat.
         </p>
         <p>
-          Dalam tutorial ini, kita akan belajar cara menggunakan Spring Boot
-          untuk membangunkan aplikasi web. Spring Boot ialah antara web
-          framework yang paling popular untuk Java.
+          Anda boleh memilih untuk <i>opt out</i> daripada pengiklanan personal
+          dengan melayari <a
+          href="https://adssettings.google.com/authenticated">Ads Settings</a>.
         </p>
         <p>
-          Tutorial Web Development adalah percuma dan boleh dibaca secara
-          online. Jadi, anda boleh baca pada bila-bila masa. Maka, jangan
-          ketinggalan untuk menimba ilmu yang berharga ini, Jom Belajar Web
-          Development!
-        </p>
-        <div class="cta-container">
-          <a class="cta" href="/webdevelopment">Belajar Web Development</a>
-        </div>
-      </article>
-
-      <article>
-        <p>
-          Pembangunan website ini akan sentiasa berterusan. Jadi, anda mungkin
-          akan melihat perubahan berlaku dari semasa ke semasa. Anda boleh
-          melihat pembangunan website Jom Belajar Java di <a
-          href="https://github.com/JomBelajarJava">GitHub</a>.
-        </p>
-        <p>
-          Jika ada mana-mana kesilapan, penambahbaikan, atau ketidakfahaman yang
-          ingin anda ketengahkan, anda boleh kemukakan di <a
-          href="https://groups.google.com/forum/#!forum/jombelajarjava">Google
-          Groups</a>.
+          Sebagai alternatif, anda juga boleh <i>opt out</i> dengan melayari <a
+          href="http://www.aboutads.info/choices/">www.aboutads.info</a>.
         </p>
       </article>
 
@@ -260,9 +217,6 @@
      }
      window.onload = function() {
          document.body.style.visibility = 'visible';
-         document.getElementById('javaimg').src = 'img/study.png';
-         document.getElementById('gitimg').src = 'img/meeting.png';
-         document.getElementById('webdevimg').src = 'img/spiderweb.png';
          document.getElementById('agree-policy').addEventListener('click', hidePolicy);
          if (localStorage.getItem('hasAgreedPolicy')) {
              hidePolicy();
