@@ -7,8 +7,9 @@
     <meta name="description" content="Sebuah laman web untuk sesiapa sahaja yang bercita-cita untuk menjadi seorang programmer menggunakan Java. Tutorial bermula dari topik yang paling asas.">
     <script>  /* Above CSS as suggested by Google Analytics */
      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+         a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+         m.parentNode.insertBefore(a,m)
      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
      ga('create', 'UA-64328787-1', 'auto');
@@ -68,6 +69,7 @@
      }
      .cta:link, .cta:visited {
          background-color: #c94dff;
+         border-radius: 5px;
          color: white;
          padding: 14px 25px;
          text-align: center;
@@ -79,6 +81,33 @@
      }
      .cta-container {
          text-align: center;
+     }
+     #policy {
+         position: fixed;
+         bottom: 0px;
+         width: 100%;
+         color: #444;
+         padding: 20px 0;
+         border: 1px solid grey;
+         background-color: white;
+     }
+     #policy p {
+         width: 90%;
+         padding: 5px 0;
+         margin: 0 auto;
+     }
+     #agree-policy {
+         float: right;
+         border-radius: 5px;
+         background-color: #3157c9;
+         color: white;
+         padding: 10px 25px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+     }
+     #agree-policy:hover {
+         background-color: #2a428e;
      }
     </style>
   </head>
@@ -203,12 +232,28 @@
       </footer>
     </main>
 
+    <aside id="policy">
+      <p>Website ini menggunakan cookie yang dikendalikan oleh pihak ketiga. Anda boleh membaca dengan lebih lanjut <a href="/privacy-policy">di sini</a>. Dengan menggunakan website ini, anda bersetuju dengan penggunaan cookie tersebut.</p>
+      <p><a id="agree-policy" href="#">Setuju</a></p>
+    </aside>
+
     <script>
+     function hidePolicy(evt) {
+         if (evt) {
+             evt.preventDefault();
+         }
+         localStorage.setItem('hasAgreedPolicy', true);
+         document.getElementById('policy').style.display = 'none';
+     }
      window.onload = function() {
          document.body.style.visibility = 'visible';
          document.getElementById('javaimg').src = 'img/study.png';
          document.getElementById('gitimg').src = 'img/meeting.png';
          document.getElementById('webdevimg').src = 'img/spiderweb.png';
+         document.getElementById('agree-policy').addEventListener('click', hidePolicy);
+         if (localStorage.getItem('hasAgreedPolicy')) {
+             hidePolicy();
+         }
      }
     </script>
   </body>
