@@ -88,7 +88,9 @@
          font-size: 80%;
      }
      #policy {
+         display: none;
          position: fixed;
+         z-index: 1;
          bottom: 0px;
          width: 100%;
          color: #444;
@@ -208,20 +210,29 @@
     </aside>
 
     <script>
-     function hidePolicy(evt) {
-         if (evt) {
+     (function(){
+         var showPolicy = function() {
+             document.getElementById('policy').style.display = 'block';
+         };
+
+         var hidePolicy = function(evt) {
              evt.preventDefault();
-         }
-         localStorage.setItem('hasAgreedPolicy', true);
-         document.getElementById('policy').style.display = 'none';
-     }
-     window.onload = function() {
-         document.body.style.visibility = 'visible';
-         document.getElementById('agree-policy').addEventListener('click', hidePolicy);
-         if (localStorage.getItem('hasAgreedPolicy')) {
-             hidePolicy();
-         }
-     }
+             localStorage.setItem('hasAgreedPolicy', true);
+             document.getElementById('policy').style.display = 'none';
+         };
+
+         window.onload = function() {
+             document.body.style.visibility = 'visible';
+
+             document
+                 .getElementById('agree-policy')
+                 .addEventListener('click', hidePolicy);
+
+             if (!localStorage.getItem('hasAgreedPolicy')) {
+                 showPolicy();
+             }
+         };
+     })();
     </script>
   </body>
 </html>
