@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}
+
+    {%- include notifications.html -%}
+
+    {{- content -}}
+
+    {%- include footer.html -%}
+    {%- include privacy-policy.html -%}
+
+    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+    <script>
+     (function(){
+         var showPolicy = function() {
+             document.getElementById('policy').style.display = 'block';
+         };
+
+         var hidePolicy = function(evt) {
+             evt.preventDefault();
+             localStorage.setItem('hasAgreedPolicy', true);
+             document.getElementById('policy').style.display = 'none';
+         };
+
+         document
+             .getElementById('agree-policy')
+             .addEventListener('click', hidePolicy);
+
+         if (!localStorage.getItem('hasAgreedPolicy')) {
+             showPolicy();
+         }
+     })();
+    </script>
+  </body>
+</html>

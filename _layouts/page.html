@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="container">
+  <section class="articles">
+    <div class="column is-8 is-offset-2">
+      <div class="card article">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content has-text-centered">
+              <p class="title article-title">{{ page.title | escape }}</p>
+            </div>
+          </div>
+          <div class="content article-body">
+            {{- content -}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
