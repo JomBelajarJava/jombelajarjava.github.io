@@ -24,6 +24,31 @@ pesanan untuk saya letakkan di website ini walaupun tidak wajib.
 
 Jumlah derma setakat ini: RM 0.00
 
+<p class="has-text-centered">
+  <a id="open-donation-form" class="button is-link">Buka borang untuk menghantar email</a>
+</p>
+
+<style>
+  iframe {height: 700px; border: none; overflow: hidden;}
+</style>
+<script>
+  function openDonationForm(evt) {
+    evt.preventDefault();
+    var elem = evt.target;
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('class', 'block');
+    iframe.setAttribute('src', 'https://app.jombelajarjava.com/donate');
+    iframe.setAttribute('width', '800');
+    iframe.setAttribute('scrolling', 'no');
+
+    elem.parentNode.replaceChild(iframe, elem);
+  }
+
+  document
+      .querySelector('#open-donation-form')
+      .addEventListener('click', openDonationForm);
+</script>
+
 
 
 [paypal]: https://paypal.me/burhanloey
