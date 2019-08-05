@@ -22,7 +22,7 @@ Selepas membuat pembayaran, anda boleh menghantar email ke
 update jumlah derma yang terkumpul. Anda juga boleh sertakan sekali nama dan
 pesanan untuk saya letakkan di website ini walaupun tidak wajib.
 
-Jumlah derma setakat ini: RM 0.00
+Jumlah derma setakat ini: RM 5.00
 
 <p class="iframe-container has-text-centered">
   <a id="open-donation-form" class="button is-link">Buka borang untuk menghantar email</a>
